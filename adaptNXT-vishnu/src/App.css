@@ -1,0 +1,170 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.landingPage {
+  max-width: 100%;
+  height: 100vh;
+  margin: 0px;
+  background-color: rgb(240, 239, 239);
+  display: flex;
+  flex-direction: row;
+}
+.sidebarContainer {
+  width: 20%;
+  background-color: #fff;
+  position: relative;
+  left: 0;
+  margin-right: 24px;
+  display: flex;
+  flex-direction: column;
+}
+.sidebarTop {
+  max-width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 18px;
+}
+.sidebarTop img {
+  width: 25%;
+  margin-bottom: 24px;
+}
+.options {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: rgb(133, 130, 130);
+  
+}
+.options li {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.options-selected {
+  background-color: rgb(243, 221, 243);
+  margin-bottom: 24px;
+  height: 50px;
+  width: 200px;
+  border-radius: 4px;
+  color: blueviolet;
+  cursor: pointer;
+}
+.options li button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+  font-size: 18px;
+  transition: transform 2s;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+.options li button :hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.rightContentSection {
+  width: 100%;
+  height: 100%;
+  padding-top: 32px;
+  padding-left: 18px;
+}
+.selectedOption {
+  width: 90%;
+  height: 45px;
+  background-color: rgb(235, 232, 232);
+  border-radius: 4px;
+  padding-left: 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: sans-serif;
+  font-weight: 900;
+  color: blueviolet;
+}
+.comingsoon {
+  width: 95%;
+  height: 70%;
+  background-color: transparent;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+.charts-container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  margin-top: 32px;
+}
+.linechartContainer {
+  width: 65%;
+  height: 80%;
+  border-radius: 8px; 
+  background-color: #fff;
+  margin-right: 2%;
+  position: relative;
+}
+.linechartContainer p {
+  padding-left: 24px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+hr {
+  width: 100%;
+  border-top: 1px solid lightgray;
+  margin-bottom: 36px;
+}
+.linechartCircle {
+  width: 30%;
+  height: 80%;
+  border-radius: 8px;
+  background-color: #fff;
+  position: relative;
+}
+.linechartCircle p {
+  padding-left: 24px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.piechart-center {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  float: center;
+}
+
+
+/* 768*1024 */
+
+
+@media (max-width:768px) {
+  .sidebarContainer {
+    display: none;
+  }
+  .charts-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .linechartContainer {
+    width: 90%;
+    margin-bottom: 45px;
+  }
+  .linechartCircle {
+    width: 90%;
+  }
+}
